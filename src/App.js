@@ -3,14 +3,14 @@ import Data from "./components/Data";
 import DisplayItem from "./components/DisplayItem";
 import FilterItem from "./components/FilterItem";
 function App() {
-	/********************Set the state to 2020 *******************/
+	/********************Set the state to India*******************/
 	const [EnteredItem, setEnteredItem] = useState("India");
 	const AddItemHandler = (SelectedItem) => {
 		setEnteredItem(SelectedItem);
 		console.log(SelectedItem);
 	};
 
-	/**********Filter the year using filter method*************/
+	/**********Add Filters using filter method*************/
 	const FilterItems = Data.filter((item) => {
 		if (item.country === EnteredItem) {
 			return item.country;
