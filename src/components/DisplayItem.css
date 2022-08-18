@@ -1,0 +1,29 @@
+.container{
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    box-shadow:2px 5px 10px rgb(239, 239, 239);
+    margin:1rem 5rem 1rem 7rem;
+    color:rgb(126, 125, 125);
+    border-radius:0.2rem;
+}
+.info{
+    padding:1rem 0.5rem;
+}
+.price{
+    font-weight: bold;
+    font-size:1.5rem;
+    color:rgb(48, 187, 199);
+}
+.city{
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+@media (max-width:500px){
+    .container{
+        margin:1rem 3rem;
+    }
+    img{
+        width:200px;
+        height:150px;
+    }
+}
